@@ -15,7 +15,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	
-	<!-- Bootstrpa Icons -->
+	<!-- Bootstrap Icons -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 	
 	<!-- FontAwesome JS -->
@@ -24,6 +24,33 @@
 	<!-- Theme CSS -->  
 	<link id="theme-style" rel="stylesheet" href="assets/css/risen.css">
 
+	<!-- Custom styles for colors -->
+	<style>
+		/* Tegos blue/green theme */
+		.resume-section-heading {
+			color: #006f3c; /* Tegos green */
+			border-bottom: 2px solid #006f3c;
+		}
+
+		.resume-position-title {
+			color: #003a70; /* Tegos blue */
+		}
+
+		.item-icon {
+			color: #006f3c; /* Green bullet points for certs */
+		}
+
+		/* Customize buttons */
+		.btn-primary {
+			background-color: #003a70; /* Blue buttons */
+			border-color: #003a70;
+		}
+
+		.btn-primary:hover {
+			background-color: #006f3c; /* Green hover */
+			border-color: #006f3c;
+		}
+	</style>
 </head> 
 
 <body>
@@ -187,53 +214,40 @@
 								
 								<section class="resume-educate-section resume-section">
 									<h3 class="resume-section-heading text-uppercase py-2 py-lg-3"><i class="resume-section-heading-icon bi bi-book me-2"></i>Zertifizierungen</h3>
-									<ul class="list-unstyled">
-									    <li class="mb-2">
-									        <div class="resume-degree-org">FinOps FOCUS Analyst</div>
-										<div class="resume-degree-org">FinOps Practicioner </div>
-									        <div class="resume-degree-org">SAFEe 6 Agilist</div>
-										<div class="resume-degree-org">GenAI Essentials (AWS)</div>
-									        <div class="resume-degree-org">MS AZ-900</div>
-									        <div class="resume-degree-org">L0/L1 Capgemini Architekt</div>
-									    </li>
-								    </ul>
+									<div class="item">
+										<h4 class="item-heading"><i class="item-icon bi bi-square-fill me-2"></i>FinOps FOCUS Analyst</h4>
+									</div>
+									<div class="item">
+										<h4 class="item-heading"><i class="item-icon bi bi-square-fill me-2"></i>FinOps Practitioner</h4>
+									</div>
+									<div class="item">
+										<h4 class="item-heading"><i class="item-icon bi bi-square-fill me-2"></i>SAFEe 6 Agilist</h4>
+									</div>
+									<div class="item">
+										<h4 class="item-heading"><i class="item-icon bi bi-square-fill me-2"></i>GenAI Essentials (AWS)</h4>
+									</div>
+									<div class="item">
+										<h4 class="item-heading"><i class="item-icon bi bi-square-fill me-2"></i>MS AZ-900</h4>
+									</div>
+									<div class="item">
+										<h4 class="item-heading"><i class="item-icon bi bi-square-fill me-2"></i>L0/L1 Capgemini Architekt</h4>
+									</div>
 								</section><!--//resume-section-->
-									<section class="resume-lang-section resume-section">
-										<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i class="resume-section-heading-icon bi bi-translate me-2"></i>Languages</h3>
-										 <ul class="list-unstyled resume-lang-list">
-										    <li class="mb-2">
-										        <div class="resume-lang-name">Deutsch</div>
-										        <div class="resume-level-indicator row gx-0 flex-nowrap">
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-half"></span></div>
-										        </div><!--//resume-level-indicator-->
-										    </li>
-										     <li class="mb-2">
-										        <div class="resume-lang-name">Englisch</div>
-										        <div class="resume-level-indicator row gx-0 flex-nowrap">
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-half"></span></div>
-											        <div class="col"><span class="item"></span></div>
-										        </div><!--//resume-level-indicator-->
-										    </li>
-										</ul>
-									</section>
 								
+								<hr>
+
+								<section class="resume-summary-section resume-section">
+									<h3 class="resume-section-heading text-uppercase py-2 py-lg-3"><i class="resume-section-heading-icon bi bi-award me-2"></i>Core Competencies</h3>
+									<ul>
+										<li><strong>Strategic Analysis & Planning:</strong> Driving cloud projects for Fortune 500 companies, with a focus on FinOps and the latest security strategies (DevSecOps) from ideation to implementation, ensuring alignment with customer goals.</li>
+										<li><strong>Leadership & Team Management:</strong> Experience leading onshore and offshore teams, delivering impactful projects in agile environments with responsibility for sprint planning and reviews.</li>
+										<li><strong>Data Analytics & Automation:</strong> Expertise in strategic analysis and planning, Python programming, Power BI reporting, and cross-hyperscaler data analytics for cost optimization and reporting.</li>
+										<li><strong>Cloud Architecture & Security:</strong> Proficient in designing secure, scalable cloud infrastructures while adhering to industry standards like ISO27001, BSI, and C5.</li>
+										<li><strong>Emerging Technologies:</strong> Experienced in integrating AI and GPT models to optimize cloud operations and financial reporting.</li>
+										<li><strong>Partner & Relationship Management:</strong> Skilled in working with C-level clients, contributing to governance meetings, and aligning business strategies with technology roadmaps.</li>
+									</ul>
+								</section><!--//core competencies section-->
+
 							</div><!--//col-side-->
 						</div><!--//row-->
 				    </div><!--//resume-body-->
@@ -243,7 +257,6 @@
 	</div><!--//container-->
 	
 	<footer class="footer text-center py-4">
-		<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
 		<small class="copyright">Designed with <span class="sr-only">love</span><i class="bi bi-heart-fill" style="color:#fe655c"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
 	</footer>
 
