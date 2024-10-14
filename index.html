@@ -2,186 +2,245 @@
 <html lang="de">
 
 <head>
+    <title>Pascal Rösler - Cloud Solution Expert</title>
+    <!-- Meta -->
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pascal Rösler - Cloud FinOps Expert</title>
-    
+    <meta name="description" content="Resume/CV">
+    <meta name="author" content="Pascal Rösler">
+    <link rel="shortcut icon" href="favicon.ico">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    
+
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/risen.css">
     <style>
         body {
             font-family: 'Inter', sans-serif;
             background-color: #0b0e13;
             color: #ffffff;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
+            line-height: 1.5;
         }
 
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background-color: #1a1d29;
-            border-radius: 8px;
-        }
-
-        .text-center {
-            text-align: center;
+        .container-fluid {
+            max-width: 1100px;
+            margin: auto;
         }
 
         .resume-header {
-            position: relative;
-            padding: 2rem 1rem;
+            padding: 2rem;
             text-align: center;
+            background: #1a1d29;
+            border-radius: 10px;
+            margin-bottom: 2rem;
         }
 
-        .resume-header img {
+        .resume-profile-pic {
             width: 150px;
             height: 150px;
             object-fit: cover;
             border-radius: 50%;
             margin-bottom: 1rem;
-            border: 4px solid #343a46;
         }
 
         .resume-name {
+            font-size: 2rem;
             font-weight: 800;
-            font-size: 1.8rem;
-            letter-spacing: 2px;
         }
 
         .resume-role-title {
             color: #a5a9b8;
-            font-weight: 600;
+            text-transform: uppercase;
             margin-bottom: 1rem;
         }
 
-        .contact-info {
+        .resume-contact ul {
+            list-style: none;
+            padding-left: 0;
             display: flex;
             justify-content: center;
-            gap: 1.5rem;
-            margin: 1rem 0;
-            color: #a5a9b8;
+            gap: 2rem;
+            flex-wrap: wrap;
         }
 
-        .contact-info a {
-            color: #a5a9b8;
-            text-decoration: none;
+        .resume-contact ul li {
+            display: flex;
+            align-items: center;
         }
 
-        .contact-info i {
-            margin-right: 5px;
+        .resume-section {
+            margin-bottom: 3rem;
         }
 
         .resume-section-heading {
             font-weight: 800;
             text-transform: uppercase;
             color: #f8f9fa;
-            border-bottom: 2px solid #343a46;
             padding-bottom: 0.5rem;
-            margin-top: 2rem;
+            border-bottom: 2px solid #343a46;
         }
 
-        .resume-summary, .core-competencies, .professional-experience, .skills {
-            margin-bottom: 1.5rem;
+        .resume-summary-desc,
+        .resume-timeline-list {
+            padding: 1.5rem;
+            background: #1a1d29;
+            border-radius: 8px;
+            margin-top: 1rem;
         }
 
         .list-inline {
             padding-left: 0;
             list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
         }
 
         .list-inline-item {
             background: #343a46;
-            padding: 0.5rem 1rem;
+            padding: 0.75rem 1.25rem;
             border-radius: 4px;
         }
 
-        .professional-experience h4 {
-            font-weight: 600;
-            color: #ffffff;
-        }
-
-        .experience-details {
-            padding-left: 1rem;
-            border-left: 3px solid #343a46;
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="resume-header text-center">
-            <img src="assets/images/profile.jpeg" alt="Pascal's image">
-            <h1 class="resume-name">Pascal Rösler</h1>
-            <p class="resume-role-title">Cloud Management Expert</p>
-            <div class="contact-info">
-                <a href="tel:+4915150041296"><i class="bi bi-telephone-inbound"></i>+49 1515 0041296</a>
-                <a href="mailto:mail@pascalroesler.com"><i class="bi bi-envelope"></i>mail@pascalroesler.com</a>
-                <a href="https://medium.com/@pascalroesler" target="_blank"><i class="bi bi-globe"></i>My medium.com section</a>
+    <div class="container-fluid">
+        <div class="main-content-wrapper">
+            <div class="resume-wrapper mx-auto rounded-2">
+                <div class="resume-header px-4 px-lg-5">
+                    <div class="resume-profile-holder text-center">
+                        <img class="resume-profile-pic rounded-circle" src="assets/images/profile.jpeg" alt="Pascal's image">
+                        <h2 class="resume-name text-uppercase">Pascal Rösler</h2>
+                        <div class="resume-role-title text-uppercase">Cloud FinOps Expert</div>
+                        <div class="resume-contact mt-4">
+                            <ul class="resume-contact-list list-unstyled list-inline mb-0 justify-content-between">
+                                <li class="list-inline-item me-md-3 me-lg-5">
+                                    <i class="resume-contact-icon bi bi-telephone-inbound me-2"></i>
+                                    <a href="tel:+4915150041296">+49 1515 0041296</a>
+                                </li>
+                                <li class="list-inline-item me-md-3 me-lg-5">
+                                    <i class="resume-contact-icon bi bi-envelope me-2"></i>
+                                    <a href="mailto:mail@pascalroesler.com">mail@pascalroesler.com</a>
+                                </li>
+                                <li class="list-inline-item me-md-3 me-lg-5">
+                                    <i class="resume-contact-icon bi bi-globe me-2"></i>
+                                    <a href="https://medium.com/@pascalroesler" target="_blank">My medium.com section</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-body p-4 p-lg-5">
+                    <div class="row">
+                        <div class="col-main col-12 col-lg-8 pe-lg-4">
+                            <section class="resume-summary-section resume-section">
+                                <h3 class="resume-section-heading"><i class="resume-section-heading-icon bi bi-person me-2"></i>About Me</h3>
+                                <div class="resume-summary-desc">
+                                    <p>I am a dynamic and results-driven Cloud FinOps Expert with a passion for driving digital transformation through innovative cloud solutions. Throughout my career, I have partnered with some of the world's leading organizations, helping them optimize their cloud strategies, reduce operational costs, and implement cutting-edge technologies such as AI and GPT models. My strength lies in my ability to bridge the gap between technology and business, ensuring that my clients achieve their strategic objectives while staying ahead of industry trends.</p>
+                                    <p>With deep expertise in cloud infrastructure architecture, FinOps, and relationship management, I excel at identifying business opportunities, developing tailored account plans, and maintaining long-term client relationships. I am known for my hands-on approach, attention to detail, and ability to lead cross-functional teams in delivering impactful solutions that transform businesses.</p>
+                                </div>
+                            </section>
+
+                            <section class="resume-core-competencies-section resume-section">
+                                <h3 class="resume-section-heading"><i class="resume-section-heading-icon bi bi-check-circle me-2"></i>Core Competencies</h3>
+                                <ul class="resume-summary-desc">
+                                    <li><strong>Account Management & Strategic Planning</strong>: Proven track record of developing and implementing strategic account plans for Fortune 500 clients, ensuring the alignment of technical solutions with business goals and driving revenue growth.</li>
+                                    <li><strong>Cloud Infrastructure & Emerging Technologies</strong>: Expertise in designing and deploying cloud infrastructure across Azure, AWS, and GCP, with a focus on FinOps, AI integration, and automation to optimize processes and drive innovation.</li>
+                                    <li><strong>Client Relationship Management</strong>: Extensive experience in building and nurturing relationships with C-level executives, ensuring the successful delivery of projects and aligning technology roadmaps with business objectives.</li>
+                                    <li><strong>Sales & Networking</strong>: Strong ability to identify new business opportunities, build networks within the industry, and lead negotiation processes that result in successful deal closures.</li>
+                                    <li><strong>Project Leadership & Team Management</strong>: Demonstrated leadership in managing onshore and offshore teams in agile environments, leading high-impact projects from ideation to implementation.</li>
+                                    <li><strong>Emerging Technologies & Innovation</strong>: Proficient in leveraging AI and GPT models to drive cost optimization and improve business processes.</li>
+                                    <li><strong>Data Analytics & Automation</strong>: Skilled in developing cost optimization tools using Python, Power BI, and cross-hyperscaler data analysis.</li>
+                                </ul>
+                            </section>
+
+                            <section class="resume-experience-section resume-section">
+                                <h3 class="resume-section-heading"><i class="resume-section-heading-icon bi bi-briefcase me-2"></i>Professional Experience</h3>
+                                <div class="resume-summary-desc">
+                                    <h4>Capgemini, Düsseldorf | Senior Account Manager</h4>
+                                    <p>Dec 2021 – Present</p>
+                                    <ul class="resume-timeline-list">
+                                        <li>Led strategic cloud adoption projects for public sector and enterprise clients, saving 20% in cloud costs.</li>
+                                        <li>Collaborated with C-level executives to integrate AI & GPT models, driving process improvements and significant cost reductions.</li>
+                                        <li>Contributed to cloud governance, shaping long-term technology roadmaps for clients with $135M annual cloud consumption.</li>
+                                    </ul>
+
+                                    <h4>tegos Group, Dortmund | Account Manager - Cloud Solutions</h4>
+                                    <p>Sept 2019 – Nov 2021</p>
+                                    <ul class="resume-timeline-list">
+                                        <li>Oversaw cloud migration projects for telecommunications and energy clients, improving operational efficiency.</li>
+                                        <li>Led sales efforts, acquiring new clients, and expanding services in Cloud Architecture and FinOps.</li>
+                                    </ul>
+
+                                    <h4>Xor-Solutions, Dortmund | Founder & Web Developer</h4>
+                                    <p>May 2018 – Nov 2021</p>
+                                    <ul class="resume-timeline-list">
+                                        <li>Developed high-traffic web applications with a focus on SEO and multilingual content for international clients.</li>
+                                        <li>Delivered customized web solutions using platforms such as WordPress and Shopify, with a focus on user experience and search engine optimization.</li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+
+                        <div class="col-12 col-lg-4 ps-lg-4">
+                            <section class="resume-skills-section resume-section">
+                                <h3 class="resume-section-heading"><i class="resume-section-heading-icon bi bi-gear me-2"></i>Key Expertise</h3>
+                                <ul class="list-unstyled">
+                                    <li class="list-inline-item">Cloud Infrastructure & FinOps</li>
+                                    <li class="list-inline-item">Strategic Account Management</li>
+                                    <li class="list-inline-item">AI & Emerging Technologies</li>
+                                    <li class="list-inline-item">Project Leadership & Team Management</li>
+                                    <li class="list-inline-item">Data Analytics & Automation</li>
+                                </ul>
+                            </section>
+
+                            <section class="resume-skills-section resume-section">
+                                <h3 class="resume-section-heading"><i class="resume-section-heading-icon bi bi-person-gear me-2"></i>Soft Skills</h3>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">Leadership</li>
+                                    <li class="list-inline-item">Project Management</li>
+                                    <li class="list-inline-item">DevOps/FinOps</li>
+                                    <li class="list-inline-item">Public Speaking</li>
+                                    <li class="list-inline-item">Client Engagement</li>
+                                </ul>
+                            </section>
+
+                            <section class="resume-skills-section resume-section">
+                                <h3 class="resume-section-heading"><i class="resume-section-heading-icon bi bi-award me-2"></i>Certifications</h3>
+                                <ul class="resume-timeline-list">
+                                    <li>FinOps FOCUS Analyst</li>
+                                    <li>SAFE® 6 Agilist</li>
+                                    <li>Microsoft AZ-900</li>
+                                    <li>AWS Partner: GenAI Essentials</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <section class="resume-summary">
-            <h2 class="resume-section-heading">About Me</h2>
-            <p>I am a dynamic and results-driven Cloud FinOps Expert with a passion for driving digital transformation through innovative cloud solutions. I specialize in optimizing cloud strategies, reducing operational costs, and implementing cutting-edge technologies, such as AI and GPT models. I bridge the gap between technology and business, delivering strategic objectives while staying ahead of industry trends.</p>
-            <p>My expertise includes cloud infrastructure, FinOps, and client relationship management. I am recognized for leading cross-functional teams in impactful projects, optimizing cloud spending of over $135 million annually, and driving digital transformation across public sector and enterprise clients.</p>
-        </section>
-
-        <section class="core-competencies">
-            <h2 class="resume-section-heading">Core Competencies</h2>
-            <ul class="list-inline">
-                <li class="list-inline-item">Cloud Infrastructure & FinOps</li>
-                <li class="list-inline-item">Strategic Account Management</li>
-                <li class="list-inline-item">AI & Emerging Technologies</li>
-                <li class="list-inline-item">Project Leadership & Team Management</li>
-                <li class="list-inline-item">Data Analytics & Automation</li>
-            </ul>
-        </section>
-
-        <section class="professional-experience">
-            <h2 class="resume-section-heading">Professional Experience</h2>
-            <h4>Capgemini, Düsseldorf | Solution Architect</h4>
-            <p class="experience-details">
-                Dec 2021 – Present<br>
-                Led strategic cloud adoption projects, collaborated with C-level executives on AI/GPT integrations, and managed cloud spending of over $135M annually.
-            </p>
-
-            <h4>tegos Group, Dortmund | Solution Architectr - Cloud Solutions</h4>
-            <p class="experience-details">
-                Sep 2019 – Nov 2021<br>
-                Oversaw cloud migration projects, enhanced operational efficiency, and expanded client offerings within Cloud and FinOps domains.
-            </p>
-
-            <h4>Xor-Solutions, Dortmund | Founder & Web Developer</h4>
-            <p class="experience-details">
-                May 2018 – Nov 2021<br>
-                Founded a web agency focusing on high-traffic web applications, SEO, and multilingual content creation for international clients.
-            </p>
-        </section>
-
-        <section class="skills">
-            <h2 class="resume-section-heading">Certifications & Skills</h2>
-            <ul class="list-inline">
-                <li class="list-inline-item">FinOps Certified FOCUS Analyst</li>
-                <li class="list-inline-item">SAFe® 6 Agilist</li>
-                <li class="list-inline-item">Microsoft Certified: Azure Fundamentals</li>
-                <li class="list-inline-item">AWS Partner: GenAI Essentials</li>
-                <li class="list-inline-item">Python, Power BI, Azure</li>
-                <li class="list-inline-item">Automation (FinOps), CI/CD Pipelines</li>
-            </ul>
-        </section>
     </div>
+
+    <footer class="footer text-center py-4">
+        <small class="copyright">Designed with <span class="sr-only">love</span><i class="bi bi-heart-fill" style="color:#fe655c"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+    </footer>
 </body>
 
 </html>
